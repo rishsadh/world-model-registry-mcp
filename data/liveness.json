@@ -1,0 +1,1803 @@
+{
+  "checked_on": "2026-09-30",
+  "tool_version": "0.1.0",
+  "registry": {
+    "version": "2",
+    "last_verified": "2026-09-29"
+  },
+  "method": "One GET per URL, redirects followed, body discarded. live = 2xx. blocked = 401, 403 or 429, which means the page could not be checked, not that it is gone. dead = 404, 410, other 4xx or a DNS failure. error = 5xx, a timeout or a network fault.",
+  "summary": {
+    "urls": 135,
+    "live": 133,
+    "blocked": 1,
+    "dead": 1,
+    "error": 0
+  },
+  "results": {
+    "https://3d-models.hunyuan.tencent.com/world/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-1-0",
+          "role": "vendor"
+        },
+        {
+          "id": "hunyuanworld-voyager",
+          "role": "vendor"
+        },
+        {
+          "id": "hunyuanworld-mirror",
+          "role": "vendor"
+        },
+        {
+          "id": "hy-world-2-0",
+          "role": "vendor"
+        },
+        {
+          "id": "hy-world-1-5-worldplay",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://3d.hunyuan.tencent.com/sceneTo3D": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-1-0",
+          "role": "source"
+        },
+        {
+          "id": "hunyuanworld-1-0",
+          "role": "price_page_url"
+        },
+        {
+          "id": "hy-world-2-0",
+          "role": "source"
+        },
+        {
+          "id": "hy-world-2-0",
+          "role": "price_page_url"
+        },
+        {
+          "id": "hy-world-1-5-worldplay",
+          "role": "source"
+        }
+      ]
+    },
+    "https://arxiv.org/abs/2511.16825": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "meta-worldgen",
+          "role": "vendor"
+        },
+        {
+          "id": "meta-worldgen",
+          "role": "source"
+        }
+      ]
+    },
+    "https://arxiv.org/abs/2608.05248": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuan3d-worldclaw",
+          "role": "source"
+        }
+      ]
+    },
+    "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "project-genie",
+          "role": "source"
+        }
+      ]
+    },
+    "https://blog.google/products-and-platforms/products/google-one/google-ai-subscriptions/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "project-genie",
+          "role": "source"
+        }
+      ]
+    },
+    "https://decart.ai/terms": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "decart-oasis-3",
+          "role": "source"
+        },
+        {
+          "id": "decart-oasis-3",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "project-genie",
+          "role": "source"
+        }
+      ]
+    },
+    "https://deepmind.google/models/genie/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "project-genie",
+          "role": "vendor"
+        },
+        {
+          "id": "project-genie",
+          "role": "source"
+        }
+      ]
+    },
+    "https://deepmind.google/models/genie/prompt-guide/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "project-genie",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.platform.decart.ai/getting-started/pricing": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "decart-oasis-3",
+          "role": "source"
+        },
+        {
+          "id": "decart-oasis-3",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://docs.platform.decart.ai/models/realtime/oasis-3.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "decart-oasis-3",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.platform.decart.ai/resources/api-terms.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "decart-oasis-3",
+          "role": "source"
+        },
+        {
+          "id": "decart-oasis-3",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://docs.platform.decart.ai/resources/faq.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "decart-oasis-3",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/api/faq.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/api/pricing.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        },
+        {
+          "id": "marble",
+          "role": "price_page_url"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/api/rate-limits.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/marble/create/prompt-guides/index.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/marble/create/prompt-guides/multi-image-prompt.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/marble/create/prompt-guides/pano-prompt.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/marble/create/prompt-guides/video-prompt.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/marble/export.md": {
+      "status": "live",
+      "code": 200,
+      "final_url": "https://docs.worldlabs.ai/marble/export/gaussian-splat.md",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/marble/export/mesh.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/marble/export/specs.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/marble/models.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/marble/release-notes.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/marble/support/account-billing.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        },
+        {
+          "id": "marble",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://docs.worldlabs.ai/marble/support/faq.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://documentation.api.odyssey.ml/llms.txt": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "source"
+        }
+      ]
+    },
+    "https://documentation.api.odyssey.ml/odyssey-2-overview.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "source"
+        }
+      ]
+    },
+    "https://documentation.api.odyssey.ml/sdk/python/recordings.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "source"
+        }
+      ]
+    },
+    "https://documentation.api.odyssey.ml/stream-duration-limits.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "source"
+        }
+      ]
+    },
+    "https://experience.odyssey.ml/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/Robbyant/lingbot-world": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "lingbot-world",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/Robbyant/lingbot-world-v2": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "lingbot-world",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/Robbyant/lingbot-world-v2/issues": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "lingbot-world",
+          "role": "value"
+        },
+        {
+          "id": "lingbot-world",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/SkyworkAI/Matrix-3D": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-3d",
+          "role": "source"
+        },
+        {
+          "id": "matrix-3d",
+          "role": "price_page_url"
+        },
+        {
+          "id": "matrix-3d",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/SkyworkAI/Matrix-3D/blob/main/LICENSE": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-3d",
+          "role": "source"
+        },
+        {
+          "id": "matrix-3d",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/SkyworkAI/Matrix-3D/issues": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-3d",
+          "role": "value"
+        }
+      ]
+    },
+    "https://github.com/SkyworkAI/Matrix-Game": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-game-3",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/SkyworkAI/Matrix-Game/blob/main/LICENSE": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-game-3",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/SkyworkAI/Matrix-Game/blob/main/Matrix-Game-3/LICENSE.txt": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-game-3",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/SkyworkAI/Matrix-Game/blob/main/Matrix-Game-3/README.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-game-3",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/SkyworkAI/Matrix-Game/issues": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-game-3",
+          "role": "value"
+        },
+        {
+          "id": "matrix-game-3",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HY-World-2.0": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hy-world-2-0",
+          "role": "source"
+        },
+        {
+          "id": "hy-world-2-0",
+          "role": "price_page_url"
+        },
+        {
+          "id": "hy-world-2-0",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HY-World-2.0/blob/main/DOCUMENTATION.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hy-world-2-0",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HY-World-2.0/blob/main/License.txt": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hy-world-2-0",
+          "role": "source"
+        },
+        {
+          "id": "hy-world-2-0",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HY-World-2.0/blob/main/hyworld2/worldgen/README.md": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hy-world-2-0",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HY-WorldPlay": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hy-world-1-5-worldplay",
+          "role": "source"
+        },
+        {
+          "id": "hy-world-1-5-worldplay",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HY-WorldPlay/blob/main/License.txt": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hy-world-1-5-worldplay",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/Hunyuan3D-WorldClaw": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuan3d-worldclaw",
+          "role": "vendor"
+        },
+        {
+          "id": "hunyuan3d-worldclaw",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-1-0",
+          "role": "source"
+        },
+        {
+          "id": "hunyuanworld-1-0",
+          "role": "price_page_url"
+        },
+        {
+          "id": "hunyuanworld-1-0",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0/blob/main/LICENSE": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-1-0",
+          "role": "source"
+        },
+        {
+          "id": "hunyuanworld-1-0",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0/blob/main/demo_scenegen.py": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-1-0",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-mirror",
+          "role": "source"
+        },
+        {
+          "id": "hunyuanworld-mirror",
+          "role": "price_page_url"
+        },
+        {
+          "id": "hunyuanworld-mirror",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror/blob/main/License.txt": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-mirror",
+          "role": "source"
+        },
+        {
+          "id": "hunyuanworld-mirror",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HunyuanWorld-Voyager": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-voyager",
+          "role": "source"
+        },
+        {
+          "id": "hunyuanworld-voyager",
+          "role": "price_page_url"
+        },
+        {
+          "id": "hunyuanworld-voyager",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/Tencent-Hunyuan/HunyuanWorld-Voyager/blob/main/LICENSE": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-voyager",
+          "role": "source"
+        },
+        {
+          "id": "hunyuanworld-voyager",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/VAST-AI-Research/TripoSG": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "triposg",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://github.com/VAST-AI-Research/TripoSR": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "triposr",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://github.com/VAST-AI-Research/TripoSplat": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "triposplat",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://github.com/Wan-Video/Wan2.2": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "worldsplat",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/ZiYang-xie/WorldGen": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "worldgen",
+          "role": "source"
+        },
+        {
+          "id": "worldgen",
+          "role": "price_page_url"
+        },
+        {
+          "id": "worldgen",
+          "role": "quote"
+        },
+        {
+          "id": "meta-worldgen",
+          "role": "source"
+        }
+      ]
+    },
+    "https://github.com/ZiYang-xie/WorldGen/blob/main/LICENSE": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "worldgen",
+          "role": "source"
+        },
+        {
+          "id": "worldgen",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/imlixinyang/FlashWorld": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "flashworld",
+          "role": "source"
+        },
+        {
+          "id": "flashworld",
+          "role": "price_page_url"
+        },
+        {
+          "id": "flashworld",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/imlixinyang/FlashWorld/blob/main/LICENSE": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "flashworld",
+          "role": "source"
+        },
+        {
+          "id": "flashworld",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/microsoft/TRELLIS": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "trellis",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://github.com/microsoft/TRELLIS.2": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "trellis-2",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://github.com/naver/mast3r/blob/main/LICENSE": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "worldsplat",
+          "role": "source"
+        },
+        {
+          "id": "worldsplat",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/timscheuerai/worldsplat": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "worldsplat",
+          "role": "vendor"
+        },
+        {
+          "id": "worldsplat",
+          "role": "source"
+        },
+        {
+          "id": "worldsplat",
+          "role": "price_page_url"
+        },
+        {
+          "id": "worldsplat",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/timscheuerai/worldsplat/blob/master/LICENSE": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "worldsplat",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://github.com/timscheuerai/worldsplat/issues": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "worldsplat",
+          "role": "value"
+        },
+        {
+          "id": "worldsplat",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://help.runwayml.com/hc/en-us/articles/20821762056723": {
+      "status": "blocked",
+      "code": 403,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "runway-gwm-worlds",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://huggingface.co/LeoXie/WorldGen": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "worldgen",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://huggingface.co/Skywork/Matrix-3D": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-3d",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://huggingface.co/api/models/LeoXie/WorldGen": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "worldgen",
+          "role": "source"
+        }
+      ]
+    },
+    "https://huggingface.co/api/models/Skywork/Matrix-3D": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-3d",
+          "role": "source"
+        }
+      ]
+    },
+    "https://huggingface.co/api/models/Skywork/Matrix-Game-3.0": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-game-3",
+          "role": "source"
+        }
+      ]
+    },
+    "https://huggingface.co/api/models/black-forest-labs/FLUX.1-dev": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-3d",
+          "role": "source"
+        },
+        {
+          "id": "matrix-3d",
+          "role": "quote"
+        },
+        {
+          "id": "worldgen",
+          "role": "source"
+        },
+        {
+          "id": "worldgen",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://huggingface.co/api/models/imlixinyang/FlashWorld": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "flashworld",
+          "role": "source"
+        },
+        {
+          "id": "flashworld",
+          "role": "conflict_url"
+        },
+        {
+          "id": "flashworld",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://huggingface.co/api/models/robbyant/lingbot-world-v2-1.3b-causal-fast": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "lingbot-world",
+          "role": "source"
+        }
+      ]
+    },
+    "https://huggingface.co/api/models/robbyant/lingbot-world-v2-14b-bid": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "lingbot-world",
+          "role": "source"
+        }
+      ]
+    },
+    "https://huggingface.co/api/models/robbyant/lingbot-world-v2-14b-causal-fast": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "lingbot-world",
+          "role": "source"
+        }
+      ]
+    },
+    "https://huggingface.co/api/models/robbyant/lingbot-world-v2-14b-causal-pretrain": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "lingbot-world",
+          "role": "source"
+        }
+      ]
+    },
+    "https://huggingface.co/imlixinyang/FlashWorld": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "flashworld",
+          "role": "source"
+        },
+        {
+          "id": "flashworld",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://huggingface.co/tencent/HY-World-2.0": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hy-world-2-0",
+          "role": "source"
+        },
+        {
+          "id": "hy-world-2-0",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://huggingface.co/tencent/HY-WorldPlay": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hy-world-1-5-worldplay",
+          "role": "source"
+        }
+      ]
+    },
+    "https://huggingface.co/tencent/HunyuanWorld-1": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-1-0",
+          "role": "source"
+        },
+        {
+          "id": "hunyuanworld-1-0",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://huggingface.co/tencent/HunyuanWorld-Mirror": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-mirror",
+          "role": "source"
+        },
+        {
+          "id": "hunyuanworld-mirror",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://huggingface.co/tencent/HunyuanWorld-Voyager": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuanworld-voyager",
+          "role": "source"
+        },
+        {
+          "id": "hunyuanworld-voyager",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://imlixinyang.github.io/FlashWorld-Project-Page": {
+      "status": "live",
+      "code": 200,
+      "final_url": "https://imlixinyang.github.io/FlashWorld-Project-Page/",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "flashworld",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://labs.google/projectgenie": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "project-genie",
+          "role": "source"
+        }
+      ]
+    },
+    "https://marble.worldlabs.ai/pricing": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        },
+        {
+          "id": "marble",
+          "role": "price_page_url"
+        },
+        {
+          "id": "marble",
+          "role": "conflict_url"
+        }
+      ]
+    },
+    "https://matrix-3d.github.io/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-3d",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://matrix-game-v3.github.io/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "matrix-game-3",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://odyssey.systems/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "vendor"
+        },
+        {
+          "id": "odyssey",
+          "role": "source"
+        }
+      ]
+    },
+    "https://odyssey.systems/contact": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://odyssey.systems/introducing-agora-1": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "source"
+        }
+      ]
+    },
+    "https://odyssey.systems/introducing-agora-2": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "source"
+        }
+      ]
+    },
+    "https://odyssey.systems/introducing-odyssey-2-max": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "source"
+        }
+      ]
+    },
+    "https://odyssey.systems/introducing-odyssey-3": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "source"
+        }
+      ]
+    },
+    "https://odyssey.systems/legal": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "source"
+        },
+        {
+          "id": "odyssey",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://odyssey.systems/the-gpt-2-moment-for-world-models": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "odyssey",
+          "role": "source"
+        }
+      ]
+    },
+    "https://one.google.com/about/google-ai-plans/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "project-genie",
+          "role": "source"
+        }
+      ]
+    },
+    "https://platform.worldlabs.ai": {
+      "status": "live",
+      "code": 200,
+      "final_url": "https://platform.worldlabs.ai/",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://policies.google.com/terms": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "project-genie",
+          "role": "source"
+        },
+        {
+          "id": "project-genie",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://runway.com/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "runway-gwm-worlds",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://runway.com/news/research/introducing-solaris": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "runway-gwm-worlds",
+          "role": "source"
+        }
+      ]
+    },
+    "https://runway.com/pricing": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "runway-gwm-worlds",
+          "role": "source"
+        }
+      ]
+    },
+    "https://runway.com/product/robotics": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "runway-gwm-worlds",
+          "role": "source"
+        }
+      ]
+    },
+    "https://runway.com/research/introducing-gwm-worlds-2": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "runway-gwm-worlds",
+          "role": "source"
+        }
+      ]
+    },
+    "https://runway.com/research/introducing-runway-gwm-1": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "runway-gwm-worlds",
+          "role": "source"
+        }
+      ]
+    },
+    "https://runway.com/terms-of-use": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "runway-gwm-worlds",
+          "role": "source"
+        },
+        {
+          "id": "runway-gwm-worlds",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://support.google.com/labs?p=project_genie": {
+      "status": "live",
+      "code": 200,
+      "final_url": "https://support.google.com/labs/answer/16875695?visit_id=639263634829052269-2049951906&p=project_genie&rd=1",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "project-genie",
+          "role": "source"
+        },
+        {
+          "id": "project-genie",
+          "role": "quote"
+        }
+      ]
+    },
+    "https://technology.robbyant.com/lingbot-world-v2": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "lingbot-world",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://tencent-hunyuan.github.io/Hunyuan3D-WorldClaw/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "hunyuan3d-worldclaw",
+          "role": "source"
+        }
+      ]
+    },
+    "https://worldgen.github.io/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "worldgen",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://www.beeble.ai/": {
+      "status": "live",
+      "code": 200,
+      "final_url": "https://beeble.ai/",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "beeble-3d-scene-generator",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://www.beeble.ai/features/3d-scene-generator": {
+      "status": "live",
+      "code": 200,
+      "final_url": "https://beeble.ai/features/3d-scene-generator",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "beeble-3d-scene-generator",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.beeble.ai/pricing": {
+      "status": "live",
+      "code": 200,
+      "final_url": "https://beeble.ai/pricing-cloud",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "beeble-3d-scene-generator",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.decart.ai/": {
+      "status": "live",
+      "code": 200,
+      "final_url": "https://decart.ai/",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "decart-oasis-3",
+          "role": "vendor"
+        },
+        {
+          "id": "decart-oasis-3",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.decart.ai/lucy": {
+      "status": "live",
+      "code": 200,
+      "final_url": "https://decart.ai/lucy",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "decart-oasis-3",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.decart.ai/mirage": {
+      "status": "dead",
+      "code": 404,
+      "final_url": "https://decart.ai/mirage",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "decart-oasis-3",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.decart.ai/oasis": {
+      "status": "live",
+      "code": 200,
+      "final_url": "https://decart.ai/oasis",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "decart-oasis-3",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.meta.com/blog/worldgen-3d-world-generation-reality-labs-generative-ai-research/": {
+      "status": "live",
+      "code": 200,
+      "final_url": "https://www.meta.com/en-gb/blog/worldgen-3d-world-generation-reality-labs-generative-ai-research/",
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "meta-worldgen",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.scenario.com/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "scenario-hy-world-multi-view-to-splat",
+          "role": "vendor"
+        },
+        {
+          "id": "scenario-hy-world-image-to-splat",
+          "role": "vendor"
+        },
+        {
+          "id": "scenario-hy-world-skybox-to-splat",
+          "role": "vendor"
+        }
+      ]
+    },
+    "https://www.scenario.com/models/hy-world-image-to-splat": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "scenario-hy-world-image-to-splat",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.scenario.com/models/hy-world-multi-view-to-splat": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "scenario-hy-world-multi-view-to-splat",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.scenario.com/models/hy-world-skybox-to-splat": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "scenario-hy-world-skybox-to-splat",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.scenario.com/pricing": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "scenario-hy-world-multi-view-to-splat",
+          "role": "source"
+        },
+        {
+          "id": "scenario-hy-world-image-to-splat",
+          "role": "source"
+        },
+        {
+          "id": "scenario-hy-world-skybox-to-splat",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.worldlabs.ai/": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "vendor"
+        },
+        {
+          "id": "worldlabs-atlas",
+          "role": "vendor"
+        },
+        {
+          "id": "worldlabs-atlas",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.worldlabs.ai/blog/amd-announcement": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.worldlabs.ai/blog/atlas": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        },
+        {
+          "id": "worldlabs-atlas",
+          "role": "source"
+        }
+      ]
+    },
+    "https://www.worldlabs.ai/terms-of-service": {
+      "status": "live",
+      "code": 200,
+      "checked_on": "2026-09-30",
+      "used_by": [
+        {
+          "id": "marble",
+          "role": "source"
+        },
+        {
+          "id": "marble",
+          "role": "quote"
+        }
+      ]
+    }
+  }
+}
