@@ -1522,7 +1522,7 @@
     "https://support.google.com/labs?p=project_genie": {
       "status": "live",
       "code": 200,
-      "final_url": "https://support.google.com/labs/answer/16875695?visit_id=639263634829052269-2049951906&p=project_genie&rd=1",
+      "final_url": "https://support.google.com/labs/answer/16875695?p=project_genie&rd=1",
       "checked_on": "2026-09-30",
       "used_by": [
         {

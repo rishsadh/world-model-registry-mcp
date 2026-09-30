@@ -31,7 +31,10 @@ function asList(v) {
 
 function trim(s, n = 260) {
   if (typeof s !== 'string') return s;
-  return s.length <= n ? s : s.slice(0, n - 3).trimEnd() + '...';
+  if (s.length <= n) return s;
+  const cut = s.slice(0, n - 3);
+  const at = cut.lastIndexOf(' ');
+  return (at > n * 0.6 ? cut.slice(0, at) : cut).trimEnd() + '...';
 }
 
 export function resolveId(reg, key) {

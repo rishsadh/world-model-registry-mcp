@@ -98,3 +98,10 @@ test('entryLinkStatus rolls up by entry and changedSince reports only difference
   assert.deepEqual(changedSince(prev, r), [{ url: 'https://www.worldlabs.ai/terms-of-service', was: 'live', now: 'blocked' }]);
   assert.deepEqual(changedSince(null, r), []);
 });
+
+test('tidy drops session identifiers from a redirect target and keeps the rest', async () => {
+  const { tidy } = await import('../src/verify.mjs');
+  assert.equal(tidy('https://support.google.com/labs/answer/1?visit_id=6392-204&p=project_genie&rd=1'), 'https://support.google.com/labs/answer/1?p=project_genie&rd=1');
+  assert.equal(tidy('https://example.org/a'), 'https://example.org/a');
+  assert.equal(tidy('not a url'), 'not a url');
+});

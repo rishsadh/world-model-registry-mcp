@@ -4,7 +4,7 @@ const L = (s = '') => s;
 
 function head(r) {
   const reg = r.registry;
-  const lines = [`World Model Registry v${reg.version}, last verified ${reg.last_verified} (${reg.age_days} days ago, ${reg.source} copy)`];
+  const lines = [`World Model Registry v${reg.version}, last verified ${reg.last_verified} (${reg.age_days === 1 ? '1 day' : reg.age_days + ' days'} ago, ${reg.source} copy)`];
   if (reg.stale_warning) lines.push(`WARN ${reg.stale_warning}`);
   return lines;
 }

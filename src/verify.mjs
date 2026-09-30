@@ -32,6 +32,17 @@ function gapFor(host, base, githubGap) {
   return /(^|\.)github\.com$|githubusercontent\.com$/.test(host) ? Math.max(base, githubGap) : base;
 }
 
+// Session identifiers that sites add when they redirect are noise, and not ours to keep.
+export function tidy(u) {
+  try {
+    const x = new URL(u);
+    for (const k of ['visit_id', 'sessionid', 'session_id', 'sid']) x.searchParams.delete(k);
+    return x.toString();
+  } catch {
+    return u;
+  }
+}
+
 async function probe(url, { timeoutMs, fetchImpl }) {
   try {
     const res = await fetchImpl(url, {
@@ -45,7 +56,8 @@ async function probe(url, { timeoutMs, fetchImpl }) {
     } catch {
       // the body is not needed
     }
-    return { code: res.status, final_url: res.url && res.url !== url ? res.url : undefined };
+    const final = res.url ? tidy(res.url) : undefined;
+    return { code: res.status, final_url: final && final !== url ? final : undefined };
   } catch (e) {
     const cause = e?.cause?.code || e?.cause?.message || e?.name || '';
     return { error: `${cause || e.message}`.slice(0, 120) };
