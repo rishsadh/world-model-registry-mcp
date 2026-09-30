@@ -1,0 +1,3 @@
+data/registry.json -text
+data/snapshot.json -text
+* text=auto eol=lf
