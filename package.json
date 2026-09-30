@@ -1,0 +1,38 @@
+{
+  "name": "world-model-registry-mcp",
+  "version": "0.1.0",
+  "description": "An MCP server and skill over the world model registry: which models export a splat, allow commercial use or fit 24 GB, with the quoted clause and read date.",
+  "type": "module",
+  "bin": {
+    "world-model-registry-mcp": "bin/cli.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "data",
+    "skills",
+    "AWESOME.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/",
+    "verify": "node bin/cli.mjs verify",
+    "awesome": "node bin/cli.mjs awesome --write AWESOME.md"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "world-models",
+    "gaussian-splatting",
+    "licence",
+    "agent-skill"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishsadh/world-model-registry-mcp.git"
+  },
+  "author": "Rish Sadh",
+  "license": "MIT"
+}
