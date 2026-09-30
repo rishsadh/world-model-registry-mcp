@@ -43,7 +43,7 @@ Options for any command
 
 Filters take repeated or comma-separated values: --exports splat,mesh. Commercial values:
 ${Q.COMMERCIAL_FILTERS.join(', ')}.
-Nothing here is legal advice. Clauses can change after the read date shown with them.
+This is not legal advice. Clauses can change after the read date shown with them.
 `;
 
 function parseArgs(argv) {

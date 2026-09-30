@@ -28,8 +28,8 @@ export function classify({ code, error }) {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // GitHub is the host several agents share a token on. It gets 3 seconds between requests.
-function gapFor(host, base) {
-  return /(^|\.)github\.com$|githubusercontent\.com$/.test(host) ? Math.max(base, 3000) : base;
+function gapFor(host, base, githubGap) {
+  return /(^|\.)github\.com$|githubusercontent\.com$/.test(host) ? Math.max(base, githubGap) : base;
 }
 
 async function probe(url, { timeoutMs, fetchImpl }) {
@@ -55,6 +55,7 @@ async function probe(url, { timeoutMs, fetchImpl }) {
 export async function verifyLinks(raw, opts = {}) {
   const {
     gapMs = 1500,
+    githubGapMs = 3000,
     timeoutMs = 20000,
     retryWaitMs = 65000,
     fetchImpl = globalThis.fetch,
@@ -75,7 +76,7 @@ export async function verifyLinks(raw, opts = {}) {
   const results = {};
   let done = 0;
   async function worker(host, list) {
-    const gap = gapFor(host, gapMs);
+    const gap = gapFor(host, gapMs, githubGapMs);
     for (const it of list) {
       let r = await probe(it.url, { timeoutMs, fetchImpl });
       if ((r.code === 403 || r.code === 429) && retryWaitMs > 0 && /github|huggingface/.test(host)) {

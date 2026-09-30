@@ -17,6 +17,12 @@ function ascii(s) {
     .replace(/[“”]/g, '"');
 }
 
+// A URL without its query, fragment, trailing slash or leading www., for telling a real move from a tidy-up.
+export function plain(u) {
+  const x = new URL(u);
+  return `${x.host.replace(/^www\./, '')}${x.pathname.replace(/\/$/, '')}`.toLowerCase();
+}
+
 function linkStamp(ls) {
   if (!ls || !ls.total) return 'links not checked';
   const bits = [`${ls.live} of ${ls.total} links live`];
@@ -79,7 +85,7 @@ export function renderAwesome(reg, liveness) {
   }
   if (liveness) {
     const bad = Object.entries(liveness.results).filter(([, r]) => r.status !== 'live');
-    const moved = Object.entries(liveness.results).filter(([u, r]) => r.status === 'live' && r.final_url && new URL(r.final_url).host !== new URL(u).host);
+    const moved = Object.entries(liveness.results).filter(([u, r]) => r.status === 'live' && r.final_url && plain(r.final_url) !== plain(u));
     if (bad.length || moved.length) {
       L.push('## Link check detail');
       L.push('');
@@ -90,7 +96,7 @@ export function renderAwesome(reg, liveness) {
         L.push('');
       }
       if (moved.length) {
-        L.push('Links that answered from a different host than the registry cites:');
+        L.push('Links that answered from a different address than the registry cites, so the registry entry may need updating:');
         L.push('');
         for (const [u, r] of moved) L.push(`- ${u} -> ${r.final_url}`);
         L.push('');

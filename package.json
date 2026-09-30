@@ -14,7 +14,7 @@
     "AWESOME.md"
   ],
   "scripts": {
-    "test": "node --test tests/",
+    "test": "node --test",
     "verify": "node bin/cli.mjs verify",
     "awesome": "node bin/cli.mjs awesome --write AWESOME.md"
   },
