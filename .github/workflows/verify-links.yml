@@ -2,13 +2,12 @@ name: verify-links
 
 # Refreshes the registry copy, checks every source link, and rebuilds AWESOME.md.
 #
-# The schedule is OFF until launch. To turn it on, uncomment the three lines under `schedule`.
-# Until then this runs only when someone starts it from the Actions tab.
+# Runs every Monday at 05:17 UTC (switched on 13 Oct 2026), and can also be started from the Actions tab.
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: '17 5 * * 1'
-  #     # Mondays, 05:17 UTC
+  schedule:
+    - cron: '17 5 * * 1'
+      # Mondays, 05:17 UTC
 
 permissions:
   contents: write

@@ -128,8 +128,8 @@ text is still on the page, and a blocked one has not been checked. The record is
 [`data/liveness.json`](data/liveness.json).
 
 [`.github/workflows/verify-links.yml`](.github/workflows/verify-links.yml) refreshes the registry copy, re-runs the
-check and rebuilds the list. Its schedule is commented out, so it runs only when started by hand until the repo is
-public and the schedule is switched on.
+check and rebuilds the list. It runs every Monday at 05:17 UTC and can also be started by hand. A bot commits the
+refreshed data and `AWESOME.md` to `main`.
 
 ### Keeping the data current
 
